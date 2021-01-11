@@ -1,4 +1,8 @@
 .header {
     background-color: $primary-blue;
     color: $blueish-white;
+
+    & img {
+        height: 80px;
+    }
 }
