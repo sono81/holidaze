@@ -13,7 +13,7 @@ function Layout() {
     <Router>
       <header>
         <img src={Logo} alt="Holidaze logo" />
-        <input type="text" className="searchbar"></input>
+        <input type="text" className="searchbar" placeholder="Find a place to stay..."></input>
         <nav>
           <ul className="menu">
             <li>
