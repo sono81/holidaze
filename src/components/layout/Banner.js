@@ -13,6 +13,8 @@ function Banner() {
       <div className="banner__textbox">
           This is some text that will show up in the banner
       </div>
+
+      <div className="btn btn__banner btn--green">Find a place to stay</div>
     </div>
   );
 }

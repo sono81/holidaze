@@ -1,0 +1,15 @@
+.btn {
+  padding: 10px 20px;
+
+  &__banner {
+    position: absolute;
+    right: 120px;
+    bottom: 20px;
+  }
+
+  &--green {
+    background-color: $success-green;
+    border: 3px solid $blueish-white;
+    color: $blueish-white;
+  }
+}
