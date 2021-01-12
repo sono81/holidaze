@@ -9,6 +9,10 @@ function Banner() {
         src={BannerImage}
         alt="The iconic builings of Bergen harbour, taken from the water towards land"
       />
+
+      <div className="banner__textbox">
+          This is some text that will show up in the banner
+      </div>
     </div>
   );
 }
