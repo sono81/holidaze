@@ -1,8 +1,38 @@
-.header {
+header {
     background-color: $primary-blue;
     color: $blueish-white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     & img {
-        height: 80px;
+        flex: 1;
+        margin: 0 20px 0 100px;
+        max-height: 80px;
+        max-width: 218px;
+    }
+}
+
+.searchbar {
+    flex: 2;
+    height: 30px;
+}
+
+.menu {
+    flex: 3;
+    margin: 0 100px 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+
+    &__item {
+        text-decoration: none;
+        color: $blueish-white;
+        padding: 10px 10px;
+
+        &--underline {
+            text-decoration: underline;
+        }
     }
 }
