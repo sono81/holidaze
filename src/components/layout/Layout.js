@@ -6,6 +6,7 @@ import {
   Route,
   NavLink,
 } from "react-router-dom";
+import LandingPage from "./LandingPage";
 
 function Layout() {
   return (
@@ -29,7 +30,7 @@ function Layout() {
       </header>
       <main>
         <Switch>
-          <Route path="/" />
+          <Route path="/" exact component={LandingPage} />
           <Route path="/" />
           <Route path="/" />
         </Switch>
