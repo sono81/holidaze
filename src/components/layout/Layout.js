@@ -7,13 +7,14 @@ import {
   NavLink,
 } from "react-router-dom";
 import LandingPage from "./LandingPage";
+import SearchBar from "../functional/SearchBar";
 
 function Layout() {
   return (
     <Router>
       <header>
         <img src={Logo} alt="Holidaze logo" />
-        <input type="text" className="searchbar" placeholder="Find a place to stay..."></input>
+        <SearchBar />
         <nav>
           <ul className="menu">
             <li>
