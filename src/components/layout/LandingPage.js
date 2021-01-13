@@ -19,16 +19,21 @@ function LandingPage() {
   return (
     <>
       <Banner />
-      <h1>LandingPage</h1>
-      {establishments.map((data) => {
-        const { establishmentName } = data;
+      <h1 className="establishment__h1">Places to stay</h1>
+      <div className="establishment">
+        {establishments.map((data) => {
+          const { establishmentName, imageUrl, description, id } = data;
 
-        return (
-          <EstablishmentItems 
-          establishmentName={establishmentName} 
-          />
-        );
-      })}
+          return (
+            <EstablishmentItems
+              name={establishmentName}
+              image={imageUrl}
+              description={description}
+              id={id}
+            />
+          );
+        })}
+      </div>
     </>
   );
 }
