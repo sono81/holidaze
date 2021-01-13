@@ -7,6 +7,11 @@
     bottom: 20px;
   }
 
+  &__card {
+    width: 120px;
+    margin: 0 auto 10px;
+  }
+
   &--green {
     background-color: $success-green;
     border: 3px solid $blueish-white;
