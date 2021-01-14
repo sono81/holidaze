@@ -7,24 +7,32 @@ import {
   NavLink,
 } from "react-router-dom";
 import LandingPage from "./LandingPage";
-import SearchBar from "../functional/SearchBar";
+import LoginPage from "./LoginPage";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Layout() {
   return (
     <Router>
       <header>
-        <img src={Logo} alt="Holidaze logo" />
-        <SearchBar />
+        <NavLink to="/">
+          <img src={Logo} alt="Holidaze logo" />
+        </NavLink>
         <nav>
           <ul className="menu">
             <li>
-              <NavLink to="/" className="menu__item">Search</NavLink>
+              <NavLink to="/" className="menu__item">
+                Search
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/" className="menu__item">Browse</NavLink>
+              <Link to="/#establishment" className="menu__item">
+                Browse
+              </Link>
             </li>
             <li>
-              <NavLink to="/" className="menu__item menu__item--underline">Log in</NavLink>
+              <NavLink to="/LoginPage" className="menu__item menu__item--underline">
+                Log in
+              </NavLink>
             </li>
           </ul>
         </nav>
@@ -32,7 +40,7 @@ function Layout() {
       <main>
         <Switch>
           <Route path="/" exact component={LandingPage} />
-          <Route path="/" />
+          <Route path="/LoginPage" component={LoginPage} />
           <Route path="/" />
         </Switch>
       </main>
