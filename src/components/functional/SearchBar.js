@@ -1,12 +1,14 @@
 import React from "react";
 
-function SearchBar() {
+function SearchBar({ handleSearch }) {
+
   return (
     <input
       type="text"
       className="searchbar"
       placeholder="Find a place to stay..."
-    ></input>
+      onChange={(e) => handleSearch(e)}
+    />
   );
 }
 
