@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { GET_ESTABLISHMENTS } from "../../constants/api";
+import Contact from "../functional/Contact";
 
 function Establishment() {
   const [data, setData] = useState(null);
@@ -34,18 +35,23 @@ function Establishment() {
   }
 
   return (
-    <div>
-      <img
-        src={data.imageUrl}
-        alt="The Establishment"
-        className="establishment__image establishment__image--portrait"
-      />
-      <h1>{data.establishmentName}</h1>
-      <p>{data.description}</p>
-      <p>Price: {data.price}</p>
-      <p>Max guests: {data.maxGuests}</p>
-      <p>Self catering: {catering()}</p>
-    </div>
+    <>
+      <div>
+        <img
+          src={data.imageUrl}
+          alt="The Establishment"
+          className="establishment__image establishment__image--portrait"
+        />
+        <h1>{data.establishmentName}</h1>
+        <p>{data.description}</p>
+        <p>Price: {data.price}</p>
+        <p>Max guests: {data.maxGuests}</p>
+        <p>Self catering: {catering()}</p>
+      </div>
+      <div className="contact">
+        <Contact />
+      </div>
+    </>
   );
 }
 
