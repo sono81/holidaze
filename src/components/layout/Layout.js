@@ -9,6 +9,7 @@ import {
 import LandingPage from "./LandingPage";
 import LoginPage from "./LoginPage";
 import { HashLink as Link } from "react-router-hash-link";
+import Establishment from "./Establishment";
 
 function Layout() {
   return (
@@ -41,7 +42,7 @@ function Layout() {
         <Switch>
           <Route path="/" exact component={LandingPage} />
           <Route path="/LoginPage" component={LoginPage} />
-          <Route path="/" />
+          <Route path="/establishment/:id" component={Establishment} />
         </Switch>
       </main>
     </Router>
