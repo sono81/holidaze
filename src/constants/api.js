@@ -1,1 +1,1 @@
-export const GET_ESTABLISHMENTS = "http://localhost:80/holidaze/public/api/get-establishments.php";
+export const GET_ESTABLISHMENTS = "http://localhost:80/hotel-api/get-establishments.php";
