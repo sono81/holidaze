@@ -25,7 +25,7 @@ function LandingPage() {
       const lowercaseName = establish.establishmentName.toLowerCase();
       if (lowercaseName.includes(searchLowercase)) {
         return true;
-      }
+      } 
       return false;
     });
 

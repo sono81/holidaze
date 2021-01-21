@@ -7,9 +7,10 @@ import {
   NavLink,
 } from "react-router-dom";
 import LandingPage from "./LandingPage";
-import LoginPage from "./LoginPage";
 import { HashLink as Link } from "react-router-hash-link";
 import Establishment from "./Establishment";
+import Login from "./Login/Login";
+import Dashboard from "./Dashboard/Dashboard";
 
 function Layout() {
   return (
@@ -31,7 +32,7 @@ function Layout() {
               </Link>
             </li>
             <li>
-              <NavLink to="/LoginPage" className="menu__item menu__item--underline">
+              <NavLink to="/Login" className="menu__item menu__item--underline">
                 Log in
               </NavLink>
             </li>
@@ -41,8 +42,9 @@ function Layout() {
       <main>
         <Switch>
           <Route path="/" exact component={LandingPage} />
-          <Route path="/LoginPage" component={LoginPage} />
+          <Route path="/Login" component={Login} />
           <Route path="/establishment/:id" component={Establishment} />
+          <Route path="/Dashboard" component={Dashboard} />
         </Switch>
       </main>
     </Router>
