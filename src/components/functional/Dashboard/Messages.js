@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import { GET_MESSAGES } from "../../../constants/api";
 
 function Messages() {
@@ -19,8 +19,6 @@ function Messages() {
     return <h1>Loading...</h1>;
   }
 
-  console.log(data);
-
   return (
     <div className="message__wrap">
       <h2 className="message__wrap--heading">Messages</h2>
@@ -29,12 +27,12 @@ function Messages() {
             data.map((messages) => {
               const {clientName, email, message} = messages;
               return (
-                <>
+                <Fragment key={email}>
                 <h3 className="message__item--heading">{clientName}</h3>
-                <p>Email: {email}</p>
-                <p>Message: {message}</p>
+                <p><b>Email:</b> {email}</p>
+                <p><b>Message:</b> {message}</p>
                 <hr />
-                </>
+                </Fragment>
               );
             })}
         </div>
