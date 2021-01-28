@@ -11,7 +11,7 @@ function EstablishmentItems({ name, image, description, id }) {
       />
       <h2 className="establishment__h2">{name}</h2>
       <p className="establishment__description">{description}</p>
-      <Link to={"establishment/" + id}>
+      <Link to={"establishment/" + id} style={{textDecoration:"none"}}>
         <div className="btn btn__card btn--green">More info</div>
       </Link>
     </div>
