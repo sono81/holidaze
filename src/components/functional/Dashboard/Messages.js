@@ -2,7 +2,7 @@ import React from "react";
 
 function Messages() {
   return (
-    <div className="message">
+    <div className="message__wrap">
       <h2>Messages</h2>
       <div className="message__containter">
           <div className="message__item">

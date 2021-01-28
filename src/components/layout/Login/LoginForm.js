@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, NavLink } from "react-router-dom";
 
 localStorage.setItem("username", "admin");
 localStorage.setItem("password", "login");
@@ -21,27 +21,34 @@ function LoginForm() {
       alert("Please enter valid username and password");
     }
   };
-  
+
+  const cancel = "<<<"
+
   return (
-    <form onSubmit={handleSubmit}>
-      <label>Username:</label>
-      <input
-        type="text"
-        name="username"
-        placeholder="Enter Username"
-        onChange={(e) => setUserName(e.target.value)}
-      />
+    <>
+      <form onSubmit={handleSubmit} className="login__card">
+        <label>Username:</label>
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter Username"
+          onChange={(e) => setUserName(e.target.value)}
+        />
 
-      <label>Password</label>
-      <input
-        type="passwort"
-        name="password"
-        placeholder="Enter Password"
-        onChange={(e) => setPassword(e.target.value)}
-      />
+        <label>Password</label>
+        <input
+          type="passwort"
+          name="password"
+          placeholder="Enter Password"
+          onChange={(e) => setPassword(e.target.value)}
+        />
 
-      <button type="submit">Submit</button>
-    </form>
+        <button type="submit">Submit</button>
+      </form>
+      <NavLink to="/" className="login__cancel">
+         {cancel} Cancel
+      </NavLink>
+    </>
   );
 }
 

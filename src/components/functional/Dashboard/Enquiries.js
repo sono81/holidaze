@@ -2,7 +2,7 @@ import React from "react";
 
 function Enquiries() {
   return (
-    <div className="message">
+    <div className="message__wrap">
       <h2>Enquiries</h2>
       <div className="message__containter">
           <div className="message__item">
