@@ -22,6 +22,15 @@ Link:link {
     border-radius: 5px;
   }
 
+  &__login {
+    padding: 5px 20px;
+    position: relative;
+    margin: 0;
+    right: -45px;
+    bottom: 5px;
+    border-radius: 10px;
+  }
+
   &--green {
     background-color: $success-green;
     border: 3px solid $blueish-white;

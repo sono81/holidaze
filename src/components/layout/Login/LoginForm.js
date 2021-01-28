@@ -25,30 +25,33 @@ function LoginForm() {
   const cancel = "<<<"
 
   return (
-    <>
+    <div className="login__wrapper">
       <form onSubmit={handleSubmit} className="login__card">
-        <label>Username:</label>
+        <h2 className="login__heading">Login</h2>
+        <label className="login__name">Username:</label>
         <input
           type="text"
           name="username"
           placeholder="Enter Username"
+          className="login__input"
           onChange={(e) => setUserName(e.target.value)}
         />
 
-        <label>Password</label>
+        <label className="login__name">Password</label>
         <input
           type="passwort"
           name="password"
           placeholder="Enter Password"
+          className="login__input"
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <button type="submit">Submit</button>
+        <button type="submit" className="btn btn__login btn--greenthin">Submit</button>
       </form>
       <NavLink to="/" className="login__cancel">
          {cancel} Cancel
       </NavLink>
-    </>
+    </div>
   );
 }
 

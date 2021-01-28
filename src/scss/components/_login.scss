@@ -1,0 +1,29 @@
+.login {
+    &__wrapper{
+        height: 88.9vh;
+        color: $blueish-white;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__card {
+        background-color: $primary-blue;
+        width: 300px;
+        padding: 20px;
+    }
+
+    &__name {
+        display: block;
+    }
+
+    &__input {
+        width: 50%;
+    }
+
+    &__cancel {
+        color: $warning-red;
+    }
+}
