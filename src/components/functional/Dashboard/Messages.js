@@ -23,18 +23,22 @@ function Messages() {
     <div className="message__wrap">
       <h2 className="message__wrap--heading">Messages</h2>
       <div className="message__container">
-        <div className="message__item">{
-            data.map((messages) => {
-              const {clientName, email, message} = messages;
-              return (
-                <Fragment key={email}>
+        <div className="message__item">
+          {data.map((messages) => {
+            const { clientName, email, message } = messages;
+            return (
+              <Fragment key={email}>
                 <h3 className="message__item--heading">{clientName}</h3>
-                <p><b>Email:</b> {email}</p>
-                <p><b>Message:</b> {message}</p>
+                <p>
+                  <b>Email:</b> {email}
+                </p>
+                <p>
+                  <b>Message:</b> {message}
+                </p>
                 <hr />
-                </Fragment>
-              );
-            })}
+              </Fragment>
+            );
+          })}
         </div>
       </div>
     </div>
