@@ -1,0 +1,44 @@
+.message {
+    &__wrap{
+        display: inline-block;
+        background-color: $primary-blue;
+        width: 33%;
+        border-radius: 10px;
+        margin: 10px 0 0 10px;
+        text-align: left;
+        vertical-align: top;
+
+        &--heading{
+            position: relative;
+            color: $blueish-white;
+            margin-left: 10px;
+            padding-top: 10px;
+        }
+    }
+
+    &__container {
+        background-color: $blueish-white;
+        color: $blueish-black;
+        margin: 10px;
+        border-radius: 10px;
+        padding-top: 10px;
+    }
+
+    &__item {
+        display: block;
+        margin: 0 10px;
+
+        &--heading {
+            margin: 0;
+        }
+
+    }
+}
+
+hr {
+    margin: 10px;
+}
+
+hr:last-of-type{
+    display: none;
+}
