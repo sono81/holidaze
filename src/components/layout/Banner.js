@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
 import BannerImage from "../../images/locations/zhang-shaoqi-p88RtasclWk-unsplash.jpg";
 
 function Banner() {
@@ -14,7 +15,10 @@ function Banner() {
           This is some text that will show up in the banner
       </div>
 
-      <div className="btn btn__banner btn--green">Find a place to stay</div>
+      <div className="btn btn__banner btn--green">
+        <Link to="/#establishment" className="menu__item">Find a place to stay
+        </Link>
+        </div>
     </div>
   );
 }
