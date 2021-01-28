@@ -30,7 +30,7 @@ function AddEstablishment() {
         <input type="number" className="message__item--input"/>
         <label className="message__item--label">Description:</label>
         <textarea className="message__item--textarea"></textarea>
-        <button type="submit">Add</button>
+        <button className="btn__add btn--greenthin" type="submit">Add</button>
       </form>
     </div>
   );

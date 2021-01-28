@@ -12,9 +12,20 @@
     margin: 0 auto 10px;
   }
 
+  &__add {
+    width: 80px;
+    margin: 5px 0 10px;
+    border-radius: 5px;
+  }
+
   &--green {
     background-color: $success-green;
     border: 3px solid $blueish-white;
     color: $blueish-white;
+  }
+
+  &--greenthin{
+    background-color: $success-green;
+    border: 2px solid $blueish-white;
   }
 }
