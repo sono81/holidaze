@@ -24,6 +24,11 @@
             width: 98.7%;
             margin-bottom: 20px;
         }
+
+        &--contact{
+            width: 100%;
+            margin-left: 0;
+        }
     }
 
     &__container {
@@ -73,6 +78,9 @@
         &--right{
             float: right;
         }
+        &--contact{
+            width: 40%;
+        }
 
     }
 }
@@ -83,4 +91,8 @@ hr {
     &:last-of-type{
         display: none;
     }
+}
+
+fieldset{
+    border:none;
 }

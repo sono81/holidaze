@@ -35,23 +35,26 @@ function Establishment() {
   }
 
   return (
-    <>
-      <div>
-        <img
-          src={data.imageUrl}
-          alt="The Establishment"
-          className="establishment__image establishment__image--portrait"
-        />
-        <h1>{data.establishmentName}</h1>
-        <p>{data.description}</p>
-        <p>Price: {data.price}</p>
-        <p>Max guests: {data.maxGuests}</p>
-        <p>Self catering: {catering()}</p>
+    <div className="establishment__wrapper">
+      <img
+        className="establishment__image--portrait"
+        src={data.imageUrl}
+        alt="The Establishment"
+      />
+      <div className="establishment__block">
+        <h1 className="establishment__h1 establishment__h1--spesific">{data.establishmentName}</h1>
+        <div className="establishment__description--spesific">
+          <p>{data.description}{data.description}{data.description}{data.description}{data.description}</p>
+          <p><b>Price:</b> {data.price}</p>
+          <p><b>Max guests:</b> {data.maxGuests}</p>
+          <p><b>Self catering:</b> {catering()}</p>
+        </div>
       </div>
+
       <div className="contact">
         <Contact />
       </div>
-    </>
+    </div>
   );
 }
 

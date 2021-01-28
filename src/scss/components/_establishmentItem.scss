@@ -16,11 +16,21 @@
     height: 150px;
     object-fit: cover;
     object-position: 50% 50%;
+
+    &--portrait {
+      float: left;
+      height: 325px;
+      width: 260px;
+      margin-right: 20px;
+    }
   }
 
   &__h1 {
     font-family: $PaytoneOne;
     margin-bottom: 30px;
+    &--spesific {
+      margin-bottom: 0;
+    }
   }
 
   &__h2 {
@@ -31,5 +41,21 @@
     padding: 0 10px;
     height: 82px;
     overflow: hidden;
+    &--spesific {
+      background-color: white;
+      margin-left: 280px;
+      padding-left: 20px;
+      height: 265px;
+    }
+  }
+
+  &__wrapper {
+    margin: 20px 120px;
+    text-align: left;
+  }
+
+  &__block {
+    vertical-align: top;
+    height: 325px;
   }
 }
