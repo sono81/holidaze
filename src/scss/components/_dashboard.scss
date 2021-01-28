@@ -64,6 +64,16 @@
             min-height: 100px;
         }
 
+        &--left,
+        &--right{ 
+            display: inline-block;
+            width: 48%;
+        }
+
+        &--right{
+            float: right;
+        }
+
     }
 }
 
