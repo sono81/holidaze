@@ -1,10 +1,14 @@
+.dashboard {
+    margin: 0 120px;
+}
+
 .message {
     &__wrap{
         display: inline-block;
         background-color: $primary-blue;
-        width: 33%;
+        width: 48.1%;
         border-radius: 10px;
-        margin: 10px 0 0 10px;
+        margin: 20px 0 0 10px;
         text-align: left;
         vertical-align: top;
 
@@ -13,6 +17,10 @@
             color: $blueish-white;
             margin-left: 10px;
             padding-top: 10px;
+        }
+
+        &--wide{
+            width: 98.7%;
         }
     }
 
@@ -32,13 +40,35 @@
             margin: 0;
         }
 
+        &--label {
+            display: block;
+            color: $blueish-white;
+            width: 98%;
+        }
+
+        &--input {
+            width: 98%;
+            background-color: $blueish-white;
+            border:none;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        &--textarea{
+            width: 98%;
+            background-color: $blueish-white;
+            border: none;
+            border-radius: 5px;
+            min-height: 100px;
+        }
+
     }
 }
 
 hr {
     margin: 10px;
-}
 
-hr:last-of-type{
-    display: none;
+    &:last-of-type{
+        display: none;
+    }
 }
