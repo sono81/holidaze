@@ -1,30 +1,27 @@
 import React, { useState } from "react";
-import {useHistory} from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 localStorage.setItem("username", "admin");
 localStorage.setItem("password", "login");
 
-async function loginCredentials() {
-  const username = localStorage.getItem("username");
-  const password = localStorage.getItem("password");
-  return (username, password);
-}
+const username = localStorage.getItem("username");
+const password = localStorage.getItem("password");
 
 function LoginForm() {
-  const [username, setUserName] = useState();
-  const [password, setPassword] = useState();
+  const [usernameInput, setUserName] = useState();
+  const [passwordInput, setPassword] = useState();
   const history = useHistory();
 
   const handleSubmit = (e) => {
-
     e.preventDefault();
-    loginCredentials({
-      username,
-      password,
-    });
-    history.push("/Dashboard");
 
+    if (usernameInput === username && passwordInput === password) {
+      history.push("/Dashboard");
+    } else {
+      alert("Please enter valid username and password");
+    }
   };
+  
   return (
     <form onSubmit={handleSubmit}>
       <label>Username:</label>
