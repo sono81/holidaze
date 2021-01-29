@@ -11,6 +11,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import Establishment from "./Establishment";
 import Login from "./Login/Login";
 import Dashboard from "./Dashboard/Dashboard";
+import ContactPage from "./ContactPage";
 
 function Layout() {
   return (
@@ -32,6 +33,11 @@ function Layout() {
               </Link>
             </li>
             <li>
+              <NavLink to="/Contact" className="menu__item">
+                Contact
+              </NavLink>
+            </li>
+            <li>
               <NavLink to="/Login" className="menu__item menu__item--underline">
                 Log in
               </NavLink>
@@ -45,6 +51,7 @@ function Layout() {
           <Route path="/Login" component={Login} />
           <Route path="/establishment/:id" component={Establishment} />
           <Route path="/Dashboard" component={Dashboard} />
+          <Route path="/Contact" component={ContactPage} />
         </Switch>
       </main>
     </Router>
