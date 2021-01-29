@@ -25,8 +25,6 @@ function Establishment() {
     return <div className="loading">Loading content...</div>;
   }
 
-  console.log(data);
-
   function catering() {
     if (data.selfCatering === true) {
       return <span>Yes</span>;
@@ -44,7 +42,7 @@ function Establishment() {
       <div className="establishment__block">
         <h1 className="establishment__h1 establishment__h1--spesific">{data.establishmentName}</h1>
         <div className="establishment__description--spesific">
-          <p>{data.description}{data.description}{data.description}{data.description}{data.description}</p>
+          <p>{data.description}</p>
           <p><b>Price:</b> {data.price}</p>
           <p><b>Max guests:</b> {data.maxGuests}</p>
           <p><b>Self catering:</b> {catering()}</p>
