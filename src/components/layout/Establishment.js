@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { GET_ESTABLISHMENTS } from "../../constants/api";
-import Contact from "../functional/Contact";
+import Enquiry from "../functional/Enquiry";
 
 function Establishment() {
   const [data, setData] = useState(null);
@@ -50,7 +50,7 @@ function Establishment() {
       </div>
 
       <div className="contact">
-        <Contact />
+        <Enquiry title={data}/>
       </div>
     </div>
   );
