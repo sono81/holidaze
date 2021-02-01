@@ -1,39 +1,83 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import {GET_ESTABLISHMENTS, POST_ESTABLISHMENTS} from "../../../constants/api";
 
 function AddEstablishment() {
+
+  const [establishment, setEstablishment] = useState([])
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch(GET_ESTABLISHMENTS)
+    .then((response) => response.json())
+    .then((json) => setEstablishment(json))
+    .catch((err) => console.log(err))
+    .finally(() => setLoading(false));
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>
+  }
+
+  const idLength = establishment.length + 1;
+
   return (
     <div className="message__wrap message__wrap--wide">
       <h2 className="message__wrap--heading">Add Establishment</h2>
-      <form className="message__item">
+      <form method="POST" action={POST_ESTABLISHMENTS} className="message__item">
         <div className="message__item--left">
-          <label className="message__item--label">Name:</label>
-          <input type="text" className="message__item--input" />
-          <label className="message__item--label">Email:</label>
-          <input type="email" className="message__item--input" />
-          <label className="message__item--label">Google Lat:</label>
-          <input type="number" className="message__item--input" />
-          <label className="message__item--label">Google Lng:</label>
-          <input type="number" className="message__item--input" />
+          <label htmlFor="establishmentName" className="message__item--label">
+            Name:
+          </label>
+          <input
+            type="text"
+            name="establishmentName"
+            className="message__item--input"
+          />
+          <label htmlFor="establishmentEmail" className="message__item--label">
+            Email:
+          </label>
+          <input
+            type="email"
+            name="establishmentEmail"
+            className="message__item--input"
+          />
+          <label htmlFor="googleLat" className="message__item--label">
+            Google Latitude:
+          </label>
+          <input
+            type="number"
+            name="googleLat"
+            className="message__item--input"
+          />
+          <label htmlFor="googleLong" className="message__item--label">
+            Google Longitude:
+          </label>
+          <input
+            type="number"
+            name="googleLong"
+            className="message__item--input"
+          />
+          <label htmlFor="id" className="message__item--label">ID</label>
+          <input type="number" name="id" value={idLength || ''} className="message__item--input" readOnly/>
         </div>
         <div className="message__item--right">
-          <p className="message__item--label">
-            Self Catering:
-            <label>
-              <input type="radio" value="yes" name="selfCatering" />
-              Yes
-            </label>
-            <label>
-              <input type="radio" value="no" name="selfCatering" />
-              No
-            </label>
+          <p>
+          <label htmlFor="selfCatering" className="message__item--radiovalue">Self Catering:</label>
+          <label htmlFor="true" className="message__item--radiovalue"> Yes</label>
+          <input type="radio" name="selfCatering" value="true" />
+          <label htmlFor="false" className="message__item--radiovalue">No</label>
+          <input type="radio" name="selfCatering" value="false" />
           </p>
-          <label className="message__item--label">Price:</label>
-          <input type="number" className="message__item--input" />
-          <label className="message__item--label">Max Guests:</label>
-          <input type="number" className="message__item--input" />
+        
+          <label htmlFor="price" className="message__item--label">Price:</label>
+          <input type="number" name="price" className="message__item--input" />
+          <label htmlFor="maxGuests" className="message__item--label">Max Guests:</label>
+          <input type="number" name="maxGuests" className="message__item--input" />
+          <label htmlFor="imageUrl" className="message__item--label">Image Url:</label>
+          <input type="text" name="imageUrl" className="message__item--input" />
         </div>
-        <label className="message__item--label">Description:</label>
-        <textarea className="message__item--textarea"></textarea>
+        <label htmlFor="descriprion" className="message__item--label">Description:</label>
+        <textarea name="description" className="message__item--textarea"></textarea>
         <button className="btn__add btn--greenthin" type="submit">
           Add
         </button>
