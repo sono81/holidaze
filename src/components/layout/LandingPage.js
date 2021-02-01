@@ -25,7 +25,7 @@ function LandingPage() {
       const lowercaseName = establish.establishmentName.toLowerCase();
       if (lowercaseName.includes(searchLowercase)) {
         return true;
-      } 
+      }
       return false;
     });
 
@@ -35,10 +35,24 @@ function LandingPage() {
   return (
     <>
       <Banner />
-      <h1 className="establishment__h1"  id="establishment">Places to stay</h1>
+      <h1 className="establishment__h1" id="establishment">
+        Places to stay
+      </h1>
+      {establishmentFilter.map((datas) => {
+        const { establishmentName, id } = datas;
+        return (
+          <React.Fragment key={id}>
+            <SearchBar
+              handleSearch={filterEstablishments}
+              value={establishmentName}
+              id={id}
+            />
+          </React.Fragment>
+        );
+      })}[]
       <SearchBar handleSearch={filterEstablishments} />
       <div className="establishment">
-        {establishmentFilter.map((data) => {
+        {establishments.map((data) => {
           const { establishmentName, imageUrl, description, id } = data;
           return (
             <React.Fragment key={id}>

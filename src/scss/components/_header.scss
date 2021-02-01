@@ -25,6 +25,15 @@ header {
     top: 30px;
     left: 350px;
 
+    &__results {
+        position: absolute;
+        top: 80px;
+        left: 380px;
+        width: 26%;
+        background-color: yellow;
+        padding: 0;
+    }
+
     &--show-hide {
         visibility: hidden;
     }
