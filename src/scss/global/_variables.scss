@@ -1,8 +1,18 @@
+// Fonts
 $PTsans: 'PT Sans', sans-serif;
 $PaytoneOne: 'Paytone One', sans-serif;
+
+// Colours
 $primary-blue: #14afd3;
 $success-green: #4eb748;
 $warning-red: #b64949;
 $blueish-black: #0a1517;
 $blueish-white: #ebf7f7;
 $blueish-white-transparent: #ebf7f780;
+
+// Breakpoints
+
+$desktop: 1024px;
+$tablet-max: 1023px; 
+$tablet-min: 768px; 
+$mobile: 767px;

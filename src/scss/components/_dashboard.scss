@@ -1,5 +1,10 @@
 .dashboard {
     margin: 0 120px;
+    min-height: 88vh;
+
+    @media screen and (max-width: $mobile) {
+      margin: 0 30px;
+    }
 }
 
 .message {
@@ -12,6 +17,11 @@
         text-align: left;
         vertical-align: top;
         box-shadow: 5px 5px 8px $blueish-black;
+
+        @media screen and (max-width: $mobile) {
+            width: 100%;
+            margin: 30px 0 0;
+        }
 
         &--heading{
             position: relative;
@@ -28,6 +38,9 @@
         &--contact{
             width: 100%;
             margin-left: 0;
+
+            @media screen and (max-width: $mobile) {
+            }
         }
     }
 
@@ -59,6 +72,10 @@
             border:none;
             border-radius: 5px;
             margin-bottom: 5px;
+
+            @media screen and (max-width: $mobile) {
+                width: 100%;
+            }
         }
 
         &--textarea{
@@ -73,6 +90,10 @@
         &--right{ 
             display: inline-block;
             width: 48%;
+
+            @media screen and (max-width: $mobile) {
+                width: 100%;
+            }
         }
 
         &--right{

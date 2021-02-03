@@ -4,11 +4,23 @@
   justify-content: space-between;
   margin: 0 120px;
 
+  @media screen and (max-width: $mobile) {
+    margin: 0 50px;
+}
+
   &__card {
     box-shadow: 2px 2px 5px $blueish-black;
     flex: 0 1 30%;
     margin-bottom: 40px;
     position: relative;
+
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+      flex: 0 1 48%
+    }
+
+    @media screen and (max-width: $mobile) {
+      flex: 0 1 100%;
+  }
   }
 
   &__image {
@@ -23,6 +35,13 @@
       width: 260px;
       margin-right: 20px;
       object-fit: cover;
+
+      @media screen and (max-width: $mobile) {
+      width: 100%;
+      float: none;
+      margin: 0;
+      }
+
     }
   }
 
@@ -42,21 +61,38 @@
     padding: 0 10px;
     height: 82px;
     overflow: hidden;
+
+    @media screen and (max-width: $mobile) {
+
+    }
+
     &--spesific {
       background-color: white;
       margin-left: 280px;
       padding-left: 20px;
       height: 265px;
+
+      @media screen and (max-width: $mobile) {
+        margin: 0;
+        padding: 10px;
+      }
     }
   }
 
   &__wrapper {
     margin: 20px 120px;
     text-align: left;
+
+    @media screen and (max-width: $mobile) {
+      position: static;
+      min-height: 100vh;
+      margin: 0 30px;
+    }
+
   }
 
   &__block {
-    vertical-align: top;
+    position: static;
     height: 325px;
   }
 }
