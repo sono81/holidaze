@@ -3,7 +3,9 @@ import Contact from "../functional/Contact";
 
 function ContactPage() {
     return(
+        <div className="dashboard">
         <Contact />
+        </div>
     )
 }
 
