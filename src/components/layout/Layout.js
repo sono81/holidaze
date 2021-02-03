@@ -23,11 +23,6 @@ function Layout() {
         <nav>
           <ul className="menu">
             <li>
-              <NavLink to="/" className="menu__item">
-                Search
-              </NavLink>
-            </li>
-            <li>
               <Link to="/#establishment" className="menu__item">
                 Browse
               </Link>
