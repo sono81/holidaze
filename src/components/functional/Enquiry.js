@@ -5,7 +5,7 @@ function Enquiry(data) {
     const name = data.title.establishmentName
   return (
     <div className="message__wrap message__wrap--contact">
-      <h2 className="message__wrap--heading">Contact {name}</h2>
+      <h2 className="message__wrap--heading">Book at {name}</h2>
       <form method="POST" action={POST_ENQUIRIES} className="message__item">
         <fieldset>
           <label htmlFor="establishment" className="message__item--label">Establishment:</label>
