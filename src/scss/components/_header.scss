@@ -24,14 +24,14 @@ header {
 .searchbar {
     flex: 2;
     height: 40px;
-    width: 220px;
+    width: 30%;
     border-radius: 10px;
     border: 0px solid black;
     margin: 0 30px;
     padding: 0 30px;
     position: absolute;
     top: 30px;
-    left: 350px;
+    left: 33.5%;
     background-color: $blueish-white;
 
     @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
