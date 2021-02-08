@@ -17,6 +17,14 @@
         max-height: 400px;
         object-fit: cover;
         object-position: 50% 75%;
+
+        @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+            max-height: 360px;
+        }
+
+        @media screen and (max-width: $mobile) {
+            max-height: 200px;
+        }
     }
 
     &__textbox {
