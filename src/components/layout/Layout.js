@@ -12,6 +12,7 @@ import Establishment from "./Establishment";
 import Login from "./Login/Login";
 import Dashboard from "./Dashboard/Dashboard";
 import ContactPage from "./ContactPage";
+import Footer from "./Footer";
 
 function Layout() {
   return (
@@ -49,6 +50,10 @@ function Layout() {
           <Route path="/Contact" component={ContactPage} />
         </Switch>
       </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </Router>
   );
 }

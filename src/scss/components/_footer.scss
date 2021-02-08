@@ -1,0 +1,27 @@
+div.footer {
+  background-color: $primary-blue;
+  color: $blueish-white;
+  padding: 20px;
+
+  &__adress {
+    line-height: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__paragraph {
+    background-color: red;
+    line-height: 5px;
+  }
+}
+
+ul.footer__links {
+    list-style: none;
+}
+li.footer__link {
+    display: inline-block;
+}
+
+img.footer__image {
+    width: 48px;
+    padding: 5px;
+}
