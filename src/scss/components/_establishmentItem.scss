@@ -6,7 +6,7 @@
 
   @media screen and (max-width: $mobile) {
     margin: 0 50px;
-}
+  }
 
   &__card {
     box-shadow: 2px 2px 5px $blueish-black;
@@ -15,12 +15,12 @@
     position: relative;
 
     @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
-      flex: 0 1 48%
+      flex: 0 1 48%;
     }
 
     @media screen and (max-width: $mobile) {
       flex: 0 1 100%;
-  }
+    }
   }
 
   &__image {
@@ -37,11 +37,10 @@
       object-fit: cover;
 
       @media screen and (max-width: $mobile) {
-      width: 100%;
-      float: none;
-      margin: 0;
+        width: 100%;
+        float: none;
+        margin: 0;
       }
-
     }
   }
 
@@ -63,7 +62,6 @@
     overflow: hidden;
 
     @media screen and (max-width: $mobile) {
-
     }
 
     &--spesific {
@@ -88,7 +86,6 @@
       min-height: 100vh;
       margin: 0 30px;
     }
-
   }
 
   &__block {

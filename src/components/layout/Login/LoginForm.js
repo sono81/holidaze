@@ -22,7 +22,7 @@ function LoginForm() {
     }
   };
 
-  const cancel = "<<<"
+  const cancel = "<<<";
 
   return (
     <div className="login__wrapper">
@@ -46,10 +46,12 @@ function LoginForm() {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <button type="submit" className="btn btn__login btn--greenthin">Submit</button>
+        <button type="submit" className="btn btn__login btn--greenthin">
+          Submit
+        </button>
       </form>
       <NavLink to="/" className="login__cancel">
-         {cancel} Cancel
+        {cancel} Cancel
       </NavLink>
     </div>
   );

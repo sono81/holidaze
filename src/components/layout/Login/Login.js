@@ -2,9 +2,7 @@ import React from "react";
 import LoginForm from "./LoginForm";
 
 function Login() {
-    return (
-        <LoginForm />
-    )
+  return <LoginForm />;
 }
 
 export default Login;

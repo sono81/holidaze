@@ -1,123 +1,122 @@
 .dashboard {
-    margin: 0 120px;
-    min-height: 58.6vh;
+  margin: 0 120px;
+  min-height: 58.6vh;
 
-    @media screen and (max-width: $mobile) {
-      margin: 0 30px;
-    }
+  @media screen and (max-width: $mobile) {
+    margin: 0 30px;
+  }
 }
 
 .message {
-    &__wrap{
-        display: inline-block;
-        background-color: $primary-blue;
-        width: 48.1%;
-        border-radius: 10px;
-        margin: 20px 0 0 10px;
-        text-align: left;
-        vertical-align: top;
-        box-shadow: 5px 5px 8px $blueish-black;
+  &__wrap {
+    display: inline-block;
+    background-color: $primary-blue;
+    width: 48.1%;
+    border-radius: 10px;
+    margin: 20px 0 0 10px;
+    text-align: left;
+    vertical-align: top;
+    box-shadow: 5px 5px 8px $blueish-black;
 
-        @media screen and (max-width: $mobile) {
-            width: 100%;
-            margin: 30px 0 0;
-        }
-
-        &--heading{
-            position: relative;
-            color: $blueish-white;
-            margin-left: 10px;
-            padding-top: 10px;
-        }
-
-        &--wide{
-            width: 98.7%;
-            margin-bottom: 20px;
-        }
-
-        &--contact{
-            width: 100%;
-            margin-left: 0;
-
-            @media screen and (max-width: $mobile) {
-            }
-        }
+    @media screen and (max-width: $mobile) {
+      width: 100%;
+      margin: 30px 0 0;
     }
 
-    &__container {
-        background-color: $blueish-white;
-        color: $blueish-black;
-        margin: 10px;
-        border-radius: 10px;
-        padding: 10px 0;
+    &--heading {
+      position: relative;
+      color: $blueish-white;
+      margin-left: 10px;
+      padding-top: 10px;
     }
 
-    &__item {
-        display: block;
-        margin: 0 10px;
-
-        &--heading {
-            margin: 0;
-        }
-
-        &--label {
-            display: block;
-            color: $blueish-white;
-            width: 98%;
-        }
-
-        &--input {
-            width: 49%;
-            background-color: $blueish-white;
-            border:none;
-            border-radius: 5px;
-            margin-bottom: 5px;
-
-            @media screen and (max-width: $mobile) {
-                width: 100%;
-            }
-        }
-
-        &--textarea{
-            width: 98%;
-            background-color: $blueish-white;
-            border: none;
-            border-radius: 5px;
-            min-height: 100px;
-        }
-
-        &--left,
-        &--right{ 
-            display: inline-block;
-            width: 48%;
-
-            @media screen and (max-width: $mobile) {
-                width: 100%;
-            }
-        }
-
-        &--right{
-            float: right;
-        }
-        &--contact{
-            width: 40%;
-        }
-
-        &--radiovalue {
-            color: $blueish-white;
-        }
-
+    &--wide {
+      width: 98.7%;
+      margin-bottom: 20px;
     }
+
+    &--contact {
+      width: 100%;
+      margin-left: 0;
+
+      @media screen and (max-width: $mobile) {
+      }
+    }
+  }
+
+  &__container {
+    background-color: $blueish-white;
+    color: $blueish-black;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px 0;
+  }
+
+  &__item {
+    display: block;
+    margin: 0 10px;
+
+    &--heading {
+      margin: 0;
+    }
+
+    &--label {
+      display: block;
+      color: $blueish-white;
+      width: 98%;
+    }
+
+    &--input {
+      width: 49%;
+      background-color: $blueish-white;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 5px;
+
+      @media screen and (max-width: $mobile) {
+        width: 100%;
+      }
+    }
+
+    &--textarea {
+      width: 98%;
+      background-color: $blueish-white;
+      border: none;
+      border-radius: 5px;
+      min-height: 100px;
+    }
+
+    &--left,
+    &--right {
+      display: inline-block;
+      width: 48%;
+
+      @media screen and (max-width: $mobile) {
+        width: 100%;
+      }
+    }
+
+    &--right {
+      float: right;
+    }
+    &--contact {
+      width: 40%;
+    }
+
+    &--radiovalue {
+      color: $blueish-white;
+    }
+  }
 }
 
 hr {
-    margin: 10px;
+  margin: 10px;
 
-    &:last-of-type{
-        display: none;
-    }
+  &:last-of-type {
+    display: none;
+  }
 }
 
-fieldset{
-    border:none;
+fieldset {
+  border: none;
 }

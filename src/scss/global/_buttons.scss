@@ -12,14 +12,14 @@ Link:link {
 
     @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
       right: 60px;
-  }
+    }
 
     @media screen and (max-width: $mobile) {
       bottom: 75px;
-      position:absolute;
+      position: absolute;
       left: 20%;
       right: 20%;
-  }
+    }
   }
 
   &__card {
@@ -48,12 +48,12 @@ Link:link {
     color: $blueish-white;
   }
 
-  &--greenthin{
+  &--greenthin {
     background-color: $success-green;
     border: 2px solid $blueish-white;
   }
 
-  &--contact{
+  &--contact {
     margin-left: 12px;
   }
 }

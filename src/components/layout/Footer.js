@@ -6,25 +6,33 @@ import Twitter from "../../images/icons/iconmonstr-twitter-4-64.png";
 
 function Footer() {
   return (
-      <div className="footer">
-        <div className="footer__adress">
-          <p>Holidaze</p>
-          <p>Roadway 365b</p>
-          <p>5011 Bergen</p>
-        </div>
-
-        <div className="footer__adress">
-          <p>+47 12 34 56 78</p>
-          <p>post@holidaze.nox</p>
-        </div>
-
-        <ul className="footer__links">
-          <li className="footer__link"><img src={Facebook} alt="facebook" className="footer__image"/></li>
-          <li className="footer__link"><img src={Instagram} alt="facebook" className="footer__image"/></li>
-          <li className="footer__link"><img src={Pinterest} alt="facebook" className="footer__image"/></li>
-          <li className="footer__link"><img src={Twitter} alt="facebook" className="footer__image"/></li>
-        </ul>
+    <div className="footer">
+      <div className="footer__adress">
+        <p>Holidaze</p>
+        <p>Roadway 365b</p>
+        <p>5011 Bergen</p>
       </div>
+
+      <div className="footer__adress">
+        <p>+47 12 34 56 78</p>
+        <p>post@holidaze.nox</p>
+      </div>
+
+      <ul className="footer__links">
+        <li className="footer__link">
+          <img src={Facebook} alt="facebook" className="footer__image" />
+        </li>
+        <li className="footer__link">
+          <img src={Instagram} alt="facebook" className="footer__image" />
+        </li>
+        <li className="footer__link">
+          <img src={Pinterest} alt="facebook" className="footer__image" />
+        </li>
+        <li className="footer__link">
+          <img src={Twitter} alt="facebook" className="footer__image" />
+        </li>
+      </ul>
+    </div>
   );
 }
 

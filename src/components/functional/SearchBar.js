@@ -64,7 +64,6 @@ export class SearchBar extends Component {
   };
 
   render() {
-
     const {
       onChange,
       onClick,
@@ -74,8 +73,6 @@ export class SearchBar extends Component {
     } = this;
     let optionList;
 
-
-    
     if (showOptions && userInput) {
       if (filteredOptions.length) {
         optionList = (
@@ -88,8 +85,12 @@ export class SearchBar extends Component {
               }
               return (
                 <li className={className} key={optionName} onClick={onClick}>
-                  <Link to={"establishment/" } style={{textDecoration: "none", color: "black"}} className="">
-                  {optionName}
+                  <Link
+                    to={"establishment/"}
+                    style={{ textDecoration: "none", color: "black" }}
+                    className=""
+                  >
+                    {optionName}
                   </Link>
                 </li>
               );

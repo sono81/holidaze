@@ -22,7 +22,7 @@ function LandingPage() {
           setError(error);
         }
       );
-  }, [])
+  }, []);
 
   var optionName = [];
 
@@ -30,16 +30,12 @@ function LandingPage() {
     optionName.push(establishments[i].establishmentName);
   }
 
-
   if (error) {
     return <div>Error: {error.message}</div>;
   } else if (!isLoaded) {
     return <div>Loading...</div>;
   } else {
-
-
     return (
-      
       <>
         <Banner />
         <h1 className="establishment__h1" id="establishment">
@@ -63,7 +59,6 @@ function LandingPage() {
         </div>
       </>
     );
-
   }
 
   //  const filterEstablishments = function (event) {

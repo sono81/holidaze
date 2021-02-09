@@ -40,17 +40,25 @@ function Establishment() {
         alt="The Establishment"
       />
       <div className="establishment__block">
-        <h1 className="establishment__h1 establishment__h1--spesific">{data.establishmentName}</h1>
+        <h1 className="establishment__h1 establishment__h1--spesific">
+          {data.establishmentName}
+        </h1>
         <div className="establishment__description--spesific">
           <p>{data.description}</p>
-          <p><b>Price:</b> {data.price}</p>
-          <p><b>Max guests:</b> {data.maxGuests}</p>
-          <p><b>Self catering:</b> {catering()}</p>
+          <p>
+            <b>Price:</b> {data.price}
+          </p>
+          <p>
+            <b>Max guests:</b> {data.maxGuests}
+          </p>
+          <p>
+            <b>Self catering:</b> {catering()}
+          </p>
         </div>
       </div>
 
       <div className="contact">
-        <Enquiry title={data}/>
+        <Enquiry title={data} />
       </div>
     </div>
   );
