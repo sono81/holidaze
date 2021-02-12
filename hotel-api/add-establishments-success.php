@@ -36,5 +36,5 @@ array_push($jsonInput, $newEstablishment);
 
 //Writes array to JSON file
 $jsonData = json_encode($jsonInput);
-file_put_contents('http:localhost:80/holidaze/public/api/establishments.json', $jsonData);
+file_put_contents('c:/xampp/htdocs/holidaze/public/api/establishments.json', $jsonData);
 ?>

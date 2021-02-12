@@ -21,5 +21,5 @@ array_push($jsonInput, $newMessage);
 
 //Writes array to JSON file
 $jsonData = json_encode($jsonInput);
-file_put_contents('http:localhost:80/holidaze/public/api/contact.json', $jsonData);
+file_put_contents('c:/xampp/htdocs/holidaze/public/api/contact.json', $jsonData);
 ?>
