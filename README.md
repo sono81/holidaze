@@ -13,3 +13,5 @@ A school project on creating a booking website for a company called Holidaze.
 4. Move the "hotel-api" folder to the htdocs folder (this is needed for the code to work)
 
 5. In your console window type: "npm start" to launch the site in your browser".
+
+### If trouble with ports, change the port value in holidaze/src/constants/api.js to your port. 
