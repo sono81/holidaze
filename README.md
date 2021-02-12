@@ -6,7 +6,7 @@ A school project on creating a booking website for a company called Holidaze.
 
 1. Download and install XAMPP from https://www.apachefriends.org/index.html
 
-2. Clone the repositry to a chosen folder under htdocs folder in xampp. Example: c:\xampp\htdocs\holidaze
+2. Clone the repositry to the htdocs folder in xampp. It should be xampp\htdocs\holidaze
 
 3. Browse with your console of choice to the folder you cloned the repositry to in the previous step and run "npm install".
 
