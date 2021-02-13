@@ -39,7 +39,7 @@ function LoginForm() {
 
         <label className="login__name">Password</label>
         <input
-          type="passwort"
+          type="password"
           name="password"
           placeholder="Enter Password"
           className="login__input"
